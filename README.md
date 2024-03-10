@@ -4,7 +4,7 @@ Qin Liu, Jaemin Cho, Mohit Bansal, Marc Niethammer <br>
 UNC-Chapel Hill <br>
 #### [Paper]() | [Video]()
 
-## installation
+## Installation
 
 ## Getting Started
 
