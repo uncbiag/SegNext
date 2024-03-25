@@ -1,0 +1,45 @@
+INTERACTIVE_MODELS_PATH: "./weights"
+EXPS_PATH: "/playpen-raid2/qinliu/models/model_0325_2024"
+
+# Evaluation datasets
+GRABCUT_PATH: "/playpen-raid2/qinliu/data/GrabCut"
+BERKELEY_PATH: "/playpen-raid2/qinliu/data/Berkeley"
+DAVIS_PATH: "/playpen-raid2/qinliu/data/DAVIS345"
+COCO_MVAL_PATH: "/playpen-raid2/qinliu/data/COCO_MVal"
+BraTS_PATH: "/playpen-raid2/qinliu/data/BraTS20"
+ssTEM_PATH: "/playpen-raid2/qinliu/data/ssTEM"
+OAIZIB_PATH: "/playpen-raid2/qinliu/data/OAI-ZIB/iseg_slices"
+OAI_PATH: "/playpen-raid2/qinliu/data/OAI"
+HARD_PATH: "/playpen-raid2/qinliu/data/HARD"
+HQSeg44K_PATH: "/playpen-raid2/qinliu/data/HQSeg44K"
+
+# Train datasets
+SBD_PATH: "/playpen-raid2/qinliu/data/SBD/dataset"
+COCO_PATH: "/playpen-raid2/qinliu/data/COCO_2017"
+LVIS_v1_PATH: "/playpen-raid2/qinliu/data/COCO_2017"
+OPENIMAGES_PATH: "/playpen-raid2/qinliu/data/OpenImages"
+PASCALVOC_PATH: "/playpen-raid2/qinliu/data/PascalVOC"
+ADE20K_PATH: "/playpen-raid2/qinliu/data/ADE20k/ADEChallengeData2016"
+
+# You can download the weights for HRNet from the repository:
+# https://github.com/HRNet/HRNet-Image-Classification
+IMAGENET_WEIGHTS:
+  HRNETV2_W18: "./weights/pretrained/hrnetv2_w18_imagenet_pretrained.pth"
+  HRNETV2_W32: "./weights/pretrained/hrnetv2_w32_imagenet_pretrained.pth"
+  HRNETV2_W40: "./weights/pretrained/hrnetv2_w40_imagenet_pretrained.pth"
+  HRNETV2_W48: "./weights/pretrained/hrnetv2_w48_imagenet_pretrained.pth"
+  HRNETV2_W64: "./weights/pretrained/hrnetv2_w64_imagenet_pretrained.pth"
+  MIT_B5: "./weights/pretrained/mit_b5_converted.pth"
+  MIT_B4: "./weights/pretrained/mit_b4_converted.pth"
+  MIT_B3: "./weights/pretrained/mit_b3_converted.pth"
+  MIT_B2: "./weights/pretrained/mit_b2_converted.pth"
+  MIT_B1: "./weights/pretrained/mit_b1_converted.pth"
+  MIT_B0: "./weights/pretrained/mit_b0_converted.pth"
+  HRF_BASE: "./weights/pretrained/hrt_base.pth"
+  SWIN_BASE: "./weights/pretrained/swin_base_patch4_window12_384_22k.pth"
+  SWIN_LARGE: "./weights/pretrained/swin_large_patch4_window12_384_22k.pth"
+
+MAE_WEIGHTS:  
+  VIT_BASE: "./weights/pretrained/mae_pretrain_vit_base.pth"
+  VIT_LARGE: "./weights/pretrained/mae_pretrain_vit_large.pth"
+  VIT_HUGE: "./weights/pretrained/mae_pretrain_vit_huge.pth"
