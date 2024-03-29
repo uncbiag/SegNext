@@ -157,7 +157,7 @@ class CanvasImage:
             crop_zx, crop_zy = crop_x * zoom_sx, crop_y * zoom_sy
             self.real_scale = (zoom_sx, zoom_sy)
 
-            interpolation = Image.NEAREST if self.current_scale > 2.0 else Image.ANTIALIAS
+            interpolation = Image.NEAREST if self.current_scale > 2.0 else Image.Resampling.LANCZOS
             __current_image = __current_image.resize((crop_zw, crop_zh), interpolation)
             zx1, zy1 = x1 - crop_zx, y1 - crop_zy
             zx2 = min(zx1 + self.canvas.winfo_width(), __current_image.width)

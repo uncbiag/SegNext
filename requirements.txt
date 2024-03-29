@@ -1,0 +1,8 @@
+matplotlib==3.8.3
+easydict==1.13
+tensorboard==2.16.2
+opencv-python==4.9.0.80
+albumentations==1.4.2
+mmcv==2.1.0
+cython-npm==0.2.4
+gdown==5.1.0

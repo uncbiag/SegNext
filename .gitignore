@@ -2,7 +2,8 @@
 *data
 
 # Models
-*weights
+*model_*
+*weights*
 *.pth
 
 # Byte-compiled / optimized / DLL files
