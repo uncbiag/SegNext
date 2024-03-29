@@ -4,9 +4,9 @@ Qin Liu, Jaemin Cho, Mohit Bansal, Marc Niethammer <br>
 UNC-Chapel Hill <br>
 
 <p align="center">
-  <img src="./assets/medal.gif" alt="drawing", height="180"/>
-  <img src="./assets/bicyclestand.gif" alt="drawing", height="180"/>
-  <img src="./assets/crack.gif" alt="drawing", height="180"/>
+  <img src="./assets/medal.gif" alt="drawing", height="170"/>
+  <img src="./assets/bicyclestand.gif" alt="drawing", height="170"/>
+  <img src="./assets/crack.gif" alt="drawing", height="170"/>
 
 </p>
 
