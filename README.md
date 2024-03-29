@@ -82,7 +82,7 @@ python ./segnext/scripts/evaluate_model.py --gpus=0 --checkpoint=./weights/vitb_
     </thead>
     <tbody align="center">
         <tr>
-            <td rowspan="1">COCO+LVIS</td>
+            <td rowspan="1">C+L</td>
             <td align="left"><a href="https://drive.google.com/uc?export=download&id=1eqkd5-J9MELGIw2WRcT5hejsnGc5oO30">vitb-sax1 (408 MB)</a></td>
             <td>85.41</td>
             <td>7.47</td>
@@ -94,7 +94,7 @@ python ./segnext/scripts/evaluate_model.py --gpus=0 --checkpoint=./weights/vitb_
             <td>177</td>
         </tr>
         <tr>
-            <td rowspan="1">COCO+LVIS</td>
+            <td rowspan="1">C+L</td>
             <td align="left"><a href="https://drive.google.com/uc?export=download&id=1oxwCm4bFby6RgltO_tl54BqRN9tojylT">vitb-sax2 (435 MB)</a></td>
             <td>85.71</td>
             <td>7.18</td>
@@ -106,7 +106,7 @@ python ./segnext/scripts/evaluate_model.py --gpus=0 --checkpoint=./weights/vitb_
             <td>163</td>
         </tr>
         <tr>
-            <td rowspan="1">COCO+LVIS+HQ</td>
+            <td rowspan="1">C+L+HQ</td>
             <td align="left"><a href="https://drive.google.com/uc?export=download&id=1yDN3mwBBO33TlA0KRdO2s07Q5HWXR6nt">vitb-sax2 (435 MB)</a></td>
             <td>91.75</td>
             <td>5.32</td>
