@@ -1,7 +1,8 @@
 # Rethinking Interactive Image Segmentation with Low Latency, High Quality, and Diverse Prompts
 Pytorch implementation for paper [Rethinking Interactive Image Segmentation with Low Latency, High Quality, and Diverse Prompts](https://arxiv.org/), CVPR 2024. <br>
 Qin Liu, Jaemin Cho, Mohit Bansal, Marc Niethammer <br>
-UNC-Chapel Hill <br>
+UNC-Chapel Hill
+#### [Paper](https://arxiv.org/) | [Demo Videos](https://drive.google.com/drive/folders/13tOhSYFCY2Ue8QR5rR8EEWHXGE75Zkxo?usp=sharing)
 
 <p align="center">
   <img src="./assets/medal.gif" alt="drawing", height="170"/>
@@ -9,9 +10,6 @@ UNC-Chapel Hill <br>
   <img src="./assets/crack.gif" alt="drawing", height="170"/>
 
 </p>
-
-
-#### [Paper](https://arxiv.org/) | [Demo Videos](https://drive.google.com/drive/folders/13tOhSYFCY2Ue8QR5rR8EEWHXGE75Zkxo?usp=sharing)
 
 ## Installation
 The code is tested with ``python=3.10``, ``torch=2.2.0``, ``torchvision=0.17.0``.
