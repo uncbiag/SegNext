@@ -2,7 +2,7 @@
 Pytorch implementation for paper [Rethinking Interactive Image Segmentation with Low Latency, High Quality, and Diverse Prompts](https://arxiv.org/), CVPR 2024. <br>
 Qin Liu, Jaemin Cho, Mohit Bansal, Marc Niethammer <br>
 UNC-Chapel Hill
-#### [Paper](https://arxiv.org/) | [Demo Videos](https://drive.google.com/drive/folders/13tOhSYFCY2Ue8QR5rR8EEWHXGE75Zkxo?usp=sharing)
+#### [Paper](https://arxiv.org/abs/2404.00741) | [Demo Videos](https://drive.google.com/drive/folders/13tOhSYFCY2Ue8QR5rR8EEWHXGE75Zkxo?usp=sharing)
 
 <p align="center">
   <img src="./assets/medal.gif" alt="drawing", height="170"/>
@@ -138,6 +138,11 @@ torchrun --nproc-per-node=4 --master-port 29506 ./segnext/train.py ${MODEL_CONFI
 ```
 
 ## Citation
-```
-TBD
+```bibtex
+@article{liu2024rethinking,
+  title={Rethinking Interactive Image Segmentation with Low Latency, High Quality, and Diverse Prompts},
+  author={Liu, Qin and Cho, Jaemin and Bansal, Mohit and Niethammer, Marc},
+  journal={arXiv preprint arXiv:2404.00741},
+  year={2024}
+}
 ```
