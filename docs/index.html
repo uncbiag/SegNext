@@ -86,25 +86,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/uncbiag/SegNext"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
-              <!-- Video Link.
-              <span class="link-block">
-                <a href="https://www.youtube.com"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video (comming soon)</span>
-                </a>
-              </span> -->
               </div>
           </div>
         </div>
@@ -117,9 +98,13 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <center><img src="./static/images/teaser.png" width="750"></center>
-      <h2 class="subtitle has-text-centered">
-        We propose <span class="dnerf">SegNext</span> for next-generation promptable segmentation <br> with low latency, high quality, and diverse prompts. 
-      </h2>
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- We propose <span class="dnerf">SegNext</span> for next-generation promptable segmentation <br> with low latency, high quality, and diverse prompts.  -->
+        Conceptual comparison between our approach <span class="dnerf">SegNext</span> and prior state-of-the-art methods, SimpleClick and
+        SAM, for the interactive segmentation task. Our method combines the best of both worlds for interactive segmentation with low
+        latency, high quality, and diverse prompts.
+
+      <!-- </h2> -->
     </div>
   </div>
 </section>
@@ -127,23 +112,25 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <center>
       <img src="./static/images/medal.gif" width=220>
       <img src="./static/images/bicyclestand.gif" width=317>
       <img src="./static/images/crack.gif" width=220>
-      <h2 class="subtitle has-text-centered">
-        Demos of <span class="dnerf">SegNext</span> for high-quality segmentation on HQSeg-44K with One Click.
-      </h2>
+    </center>
+      <!-- <h2 class="subtitle has-text-centered"> -->
+    <center>Demos of <span class="dnerf">SegNext</span> for high-quality segmentation on HQSeg-44K with One Click.</center>
+      <!-- </h2> -->
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
+        <p>
           The goal of interactive image segmentation is to delineate specific regions
           within an image via visual or language prompts. Low-latency and high-quality
           interactive segmentation with diverse prompts remain challenging for existing 
@@ -155,7 +142,10 @@
           efficiency, lifting image segmentation to the foundation model era.
           However, for high-quality segmentations, SAM still lags behind state-of-the-art
            specialist models despite SAM being trained with ×100 more
-          segmentation masks. In this work, we delve deep into the
+          segmentation masks. 
+        </p>
+        <p>
+          In this work, we delve deep into the
           architectural differences between the two types of models.
           We observe that dense representation and fusion of visual
           prompts are the key design choices contributing to the high
@@ -163,17 +153,54 @@
           we reintroduce this dense design into the generalist models, to facilitate the development of generalist models with
           high segmentation quality. To densely represent diverse visual prompts, we propose to use a dense map to capture
           five types: clicks, boxes, polygons, scribbles, and masks.
+        </p>
+        <p>
           Thus, we propose SegNext, a next-generation interactive
           segmentation approach offering low latency, high quality,
           and diverse prompt support. Our method outperforms current state-of-the-art methods on HQSeg-44K and DAVIS,
           both quantitatively and qualitatively.
-
+        </p>
        </div>
       </div>
     </div>
-    <!--/ Abstract. -->
+  </div>
+</section>
 
-    <!--/ Paper video. -->
+
+<section class="section">
+  <div class="container is-max-desktop">    
+    <center><h2 class="title is-3">Method</h2></center>
+    <center><img src="./static/images/method.png"></center>
+    SegNext overview. We use a three-channel dense map to represent five diverse visual prompts: clicks, boxes, polygons, scribbles, 
+    and masks. The embeddings of image and visual prompts are fused by element-wise addition, followed by an enhanced fusion via one
+    or two self-attention blocks. The language prompt is encoded as a vector by CLIP, followed by querying the image embedding via
+    cross-attention blocks for the mask embeddings. A lightweight decoder processes the mask embeddings for segmentation.  
+  </div>
+</section>
+
+
+
+<section class="section">
+  <div class="container is-max-desktop">    
+    <center><h2 class="title is-3">Experiments</h2></center><br>
+    <center><img src="./static/images/result_click_curve.png"></center>
+    Click to segmentation evaluation on HQSeg-44K and DAVIS. With varying numbers of clicks, our method consistently outperforms 
+    existing competitive approaches. The metric is mean Intersection over Union (mIoU).
+
+    <br><br><br>
+
+    <center><img src="./static/images/result_quanti_table.png"></center>
+    Quantitative comparison with existing methods on HQSeg-44K and DAVIS. We compare two types of baselines: specialist and
+    generalist models. Our model achieves comparable performance to the specialist baselines but with significantly lower latency; our model
+    achieves comparable performance to the generalist models in terms of latency and segmentation quality despite being trained with much
+    fewer segmentation data. “HQ” denotes the HQSeg-44K dataset; “SA×2” denotes the model has two self-attention blocks for dense fusion. 
+
+    <br><br><br>
+
+    <center><img src="./static/images/result_qualitative.png"></center>
+    Qualitative results with diverse prompts. Left: an example from DAVIS. Right: three examples from HQSeg-44K. The results 
+    are achieved by a user providing all the prompts using our best-performing model.
+
   </div>
 </section>
 
