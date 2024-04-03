@@ -2,7 +2,7 @@
 Pytorch implementation for paper [Rethinking Interactive Image Segmentation with Low Latency, High Quality, and Diverse Prompts](https://arxiv.org/abs/2404.00741), CVPR 2024. <br>
 Qin Liu, Jaemin Cho, Mohit Bansal, Marc Niethammer <br>
 UNC-Chapel Hill
-#### [Paper](https://arxiv.org/pdf/2404.00741.pdf) | [Demo Videos](https://drive.google.com/drive/folders/13tOhSYFCY2Ue8QR5rR8EEWHXGE75Zkxo?usp=sharing)
+#### [Paper](https://arxiv.org/pdf/2404.00741.pdf) | [Project](https://uncbiag.github.io/SegNext/) | [Demos](https://drive.google.com/drive/folders/13tOhSYFCY2Ue8QR5rR8EEWHXGE75Zkxo?usp=sharing)
 
 <p align="center">
   <img src="./assets/medal.gif" alt="drawing", height="170"/>
