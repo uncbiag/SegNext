@@ -45,8 +45,8 @@ We train and test our method on three datasets: DAVIS, COCO+LVIS, and HQSeg-44K.
 
 [HQSeg]: https://huggingface.co/sam-hq-team/sam-hq-training/tree/main/data
 [LVIS]: https://www.lvisdataset.org/dataset
-[DAVIS]: https://github.com/saic-vul/fbrs_interactive_segmentation/releases/download/v1.0/DAVIS.zip
-[COCOLVIS_annotation]: https://github.com/saic-vul/ritm_interactive_segmentation/releases/download/v1.0/cocolvis_annotation.tar.gz
+[DAVIS]: https://drive.google.com/uc?export=download&id=17z9aZPlRv8vpU1AEz_M0WuZC6uBkqEWE
+[COCOLVIS_annotation]: https://drive.google.com/uc?export=download&id=1kyjN6EJSjwGnzSJxVjm3Pl2-XAjV7tac
 
 Don't forget to change the paths to the datasets in [config.yml](config.yml) after downloading and unpacking.
 
