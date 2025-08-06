@@ -25,7 +25,7 @@ conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=
 pip install -r requirements.txt
 ```
 ## Getting Started
-First, download three model weights: vitb_sax1 (408M), vitb_sax2 (435M), and vitb_sax2_ft (435M). These weights will be automatically saved to the ``weights`` folder.
+First, download three model weights: vitb_sax1 (408M), vitb_sax2 (435M), and vitb_sax2_ft (435M). These weights can be found in [Google Drive](https://drive.google.com/drive/folders/1hzTvpJWalr2WTFguPnm5-6M6tMxK8MMq?usp=sharing). You may also run the following script to download them automatically. Weights will be saved to the ``weights`` folder.
 ```
 python download.py
 ``` 
