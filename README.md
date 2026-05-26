@@ -81,7 +81,7 @@ python ./segnext/scripts/evaluate_model.py --gpus=0 --checkpoint=./weights/vitb_
     <tbody align="center">
         <tr>
             <td rowspan="1">C+L</td>
-            <td align="left"><a href="https://drive.google.com/uc?export=download&id=1eqkd5-J9MELGIw2WRcT5hejsnGc5oO30">vitb-sax1 (408 MB)</a></td>
+            <td align="left"><a href="https://drive.google.com/uc?export=download&id=1G_m9_sVYVD2MBDf5ulrAUz-iSvi8bQfZ">vitb-sax1 (408 MB)</a></td>
             <td>85.41</td>
             <td>7.47</td>
             <td>11.94</td>
